@@ -1,4 +1,4 @@
-.nav {
+.nav-bar {
   justify-content: space-between;
   align-items: center; //水平置中
   height: auto; //不要設定高度，讓背景隨內容自動調整
@@ -19,7 +19,7 @@
     height: 48.57px;
     background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true)
       no-repeat;
-    background-size: 80px 48.57px; //將圖片縮小成合適大小
+    background-size: cover; //將圖片縮小成合適大小
     @include mobile {
       margin-bottom: 16px; //將logo往下與menu推出距離
     }
@@ -30,7 +30,6 @@
   @include mobile {
     margin-right: -14px; //用margin負值消除container的padding，使之貼齊邊框
     margin-left: -14px; //用margin負值消除container的padding，使之貼齊邊框
-    background: $bg-red;
     flex-wrap: wrap;
   }
 }
@@ -41,14 +40,17 @@
     width: 50%;
   }
   a {
+    // display: block;為什麼可以不用設為區塊元素
     color: #fff;
     font-size: 20px;
-    display: block;
     padding: 10px 32px 10px 32px;
     @include mobile {
-      width: 100%;
-      text-align: center;
+      // width: 100%; 如果使用100%延展，會讓下方裝飾線也延展
+      // text-align: center;
+      margin: 0 auto;
+      //使用margin將區塊元素推至中間
     }
+    // 裝飾線
     &::after {
       content: "";
       display: block;
@@ -64,8 +66,8 @@
     }
   }
 }
-.right {
-  //用高權重覆蓋讓右邊a靠邊
+.menu .right {
+  //用高權重覆蓋樣式讓右邊a靠邊
   padding-right: 0px;
   @include mobile {
     padding-right: 32px;

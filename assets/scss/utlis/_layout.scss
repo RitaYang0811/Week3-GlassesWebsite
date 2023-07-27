@@ -1,0 +1,190 @@
+// layout
+.container {
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+  //991.98px以下
+  @include pad {
+    max-width: 1063px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  //767.98px以下
+  @include mobile {
+    max-width: 791px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.f-jcsb {
+  justify-content: space-between;
+}
+.f-jcc {
+  justify-content: center;
+}
+.fxw-w {
+  flex-wrap: wrap;
+}
+.fxd-c {
+  flex-direction: column;
+}
+.f-aic {
+  align-items: center;
+}
+.f-aife {
+  align-items: flex-end;
+}
+
+.ta-c {
+  text-align: center;
+}
+// 間距
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@include mobile {
+  .py-sm-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+// gutter
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+// col
+.col-1 {
+  width: $col-1 * 1;
+}
+.col-2 {
+  width: $col-1 * 2;
+}
+.col-3 {
+  width: $col-1 * 3;
+}
+.col-4 {
+  width: $col-1 * 4;
+}
+.col-5 {
+  width: $col-1 * 5;
+}
+.col-6 {
+  width: $col-1 * 6;
+}
+.col-7 {
+  width: $col-1 * 7;
+}
+.col-8 {
+  width: $col-1 * 8;
+}
+.col-9 {
+  width: $col-1 * 9;
+}
+.col-10 {
+  width: $col-1 * 10;
+}
+.col-11 {
+  width: $col-1 * 11;
+}
+.col-12 {
+  width: $col-1 * 12;
+}
+
+// 992以下平板md-col
+@include pad {
+  .col-md-1 {
+    width: $col-1 * 1;
+  }
+  .col-md-2 {
+    width: $col-1 * 2;
+  }
+  .col-md-3 {
+    width: $col-1 * 3;
+  }
+  .col-md-4 {
+    width: $col-1 * 4;
+  }
+  .col-md-5 {
+    width: $col-1 * 5;
+  }
+  .col-md-6 {
+    width: $col-1 * 6;
+  }
+  .col-md-7 {
+    width: $col-1 * 7;
+  }
+  .col-md-8 {
+    width: $col-1 * 8;
+  }
+  .col-md-9 {
+    width: $col-1 * 9;
+  }
+  .col-md-10 {
+    width: $col-1 * 10;
+  }
+  .col-md-11 {
+    width: $col-1 * 11;
+  }
+  .col-md-12 {
+    width: $col-1 * 12;
+  }
+}
+
+//767以下手機sm-col
+@include mobile {
+  .col-sm1 {
+    width: $col-1 * 1;
+  }
+  .col-sm-2 {
+    width: $col-1 * 2;
+  }
+  .col-sm-3 {
+    width: $col-1 * 3;
+  }
+  .col-sm-4 {
+    width: $col-1 * 4;
+  }
+  .col-sm-5 {
+    width: $col-1 * 5;
+  }
+  .col-sm-6 {
+    width: $col-1 * 6;
+  }
+  .col-sm-7 {
+    width: $col-1 * 7;
+  }
+  .col-sm-8 {
+    width: $col-1 * 8;
+  }
+  .col-sm-9 {
+    width: $col-1 * 9;
+  }
+  .col-sm-10 {
+    width: $col-1 * 10;
+  }
+  .col-sm-11 {
+    width: $col-1 * 11;
+  }
+  .col-sm-12 {
+    width: $col-1 * 12;
+  }
+}

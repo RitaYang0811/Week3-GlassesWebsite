@@ -1,0 +1,45 @@
+// 全域
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: $bg-primary;
+  color: #fff;
+}
+//字型
+.italic {
+  font-style: italic;
+}
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: $dark-red;
+}
+.bold {
+  font-weight: bold;
+}
+// color
+.bg-primary {
+  background: $bg-primary;
+}

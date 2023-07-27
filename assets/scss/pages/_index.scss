@@ -1,3 +1,4 @@
+// banner
 .bg-banner-image {
   background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true)
     no-repeat;
@@ -38,6 +39,256 @@
     }
   }
   .header-btn {
-    padding: 6px 12px;
+    transition: 0.3s ease;
+    a {
+      font-size: 20px;
+      display: block;
+      padding: 6px 12px;
+    }
+    &:hover {
+      box-shadow: 0px 0px 10px #707070;
+    }
+  }
+}
+// intro
+
+.bg-secondary {
+  background: $bg-secondary;
+}
+.intro-title {
+  text-align: center;
+  margin-bottom: 32px;
+  @include mobile {
+    font-size: 24px;
+  }
+}
+.intro-card {
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark-red;
+    margin-bottom: 8px;
+  }
+}
+// series
+
+.series-title {
+  text-align: center;
+  margin-bottom: 48px;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.series-card {
+  @include pad {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  li {
+    transition: 0.3s ease; //滑走時漸變，無逗號
+    &:hover {
+      opacity: 70%;
+      transition: 0.3s ease; //滑走時漸變，無逗號
+    }
+  }
+}
+// cobranding
+.bg-brand-image {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true)
+    center;
+  background-size: cover;
+  height: auto;
+  @include pad {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true)
+      center;
+    height: 960px;
+    background-size: cover;
+  }
+  @include mobile {
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true)
+      center;
+    height: 820px;
+  }
+}
+.brand-title {
+  text-align: center;
+  margin-bottom: 48px;
+  color: #fff;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.brand-card {
+  @include pad {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+.brand-card-title {
+  text-align: center;
+  background: #fff;
+  display: block; //變成區塊元素，才能整塊填滿背景白色
+  transition: 0.3s ease; //滑走時漸變，無逗號
+  &:hover {
+    opacity: 80%;
+    transition: 0.3s ease; //滑走時漸變，無逗號
+  }
+}
+.brand-lg-pic {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
+}
+.brand-md-pic {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+// recommend
+.reco-title {
+  text-align: center;
+  margin-bottom: 48px;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.reco-card {
+  margin-left: -12px;
+  margin-right: -12px;
+
+  @include mobile {
+    gap: 16px;
+  }
+}
+.mb-md-24 {
+  @include pad {
+    margin-bottom: 24px;
+  }
+}
+// 在文字區下邊框和陰影，如果在li下會把pb包進去有白邊
+.reco-card-txt {
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 0 0 4px 4px;
+  transition: 0.5s ease;
+  &:hover {
+    box-shadow: 0px 2px 16px #00000029;
+  }
+}
+.reco-date {
+  font-size: 14px;
+  color: #707070;
+}
+// contactus
+.contactus-title {
+  text-align: center;
+  margin-bottom: 48px;
+  @include mobile {
+    margin-bottom: 24px;
+  }
+}
+.contactus {
+  margin: 0 auto;
+  gap: 16px;
+
+  p {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 24px;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  input:not(.checkbox) {
+    background: $bg-secondary;
+    margin-top: 8px;
+    width: 100%;
+    height: 33px;
+    border: 1px solid #000;
+    caret-color: $bg-primary;
+  }
+  ::placeholder {
+    padding: 12px;
+    font-size: 16px;
+    opacity: 20%;
+  }
+  textarea {
+    margin-top: 8px;
+    background: $bg-secondary;
+    height: 136px;
+    resize: none; //使用者不能自行調整大小
+    border: 1px solid #000;
+    caret-color: $bg-primary;
+  }
+  .checkbox-group {
+    gap: 4px;
+    margin-bottom: 48px;
+    @include mobile {
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+  }
+  .checkbox {
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+  }
+  // 以下參考Ann Chou 改變checkbox 顏色
+  input[type="checkbox"] {
+    cursor: pointer;
+    // position: relative;
+    // // flex-shrink: 0;
+
+    &:after {
+      position: absolute;
+      content: " ";
+      width: 24px;
+      height: 24px;
+      background-color: $bg-secondary;
+      border: 1px solid black;
+      border-radius: 2px;
+    }
+
+    &:checked:after {
+      color: white;
+      content: "✓";
+      width: 24px;
+      height: 24px;
+      background-color: $bg-primary;
+      text-align: center;
+      font-size: 16px;
+      border: none;
+    }
+  }
+}
+// 參考結束
+
+.contactus-btn {
+  margin: 0 auto;
+  transition: 0.3s ease;
+  a {
+    display: block;
+    padding: 16px 176px;
+    @include mobile {
+      padding: 16px 142px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 10px #707070;
   }
 }

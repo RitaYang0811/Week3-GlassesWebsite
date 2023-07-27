@@ -28,6 +28,7 @@ footer {
 .footer-list-menu {
   font-size: 16px;
   gap: 24px;
+
   @include mobile {
     display: none;
   }
@@ -39,6 +40,7 @@ footer {
   }
   img {
     width: 48px;
+
     @include mobile {
       width: 24px;
     }
@@ -53,6 +55,7 @@ footer {
   @include mobile {
     font-size: 16px;
   }
+
   span {
     font-size: 36px;
     width: 60px;
@@ -91,5 +94,16 @@ footer {
   }
   a {
     color: #fff;
+  }
+}
+
+// hover降低透明度
+footer {
+  a {
+    transition: 0.2s ease;
+
+    &:hover {
+      opacity: 80%;
+    }
   }
 }

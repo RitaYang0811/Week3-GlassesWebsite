@@ -1,0 +1,124 @@
+// 首頁h3紅標
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: $dark-red;
+}
+
+// 斜體
+.italic {
+  font-style: italic;
+}
+// 粗體
+.bold {
+  font-weight: bold;
+}
+// 字級
+.fz-19 {
+  font-size: 19px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.fz-24 {
+  font-size: 24px;
+}
+.fz-28 {
+  font-size: 28px;
+}
+.fz-30 {
+  font-size: 30px;
+}
+.fz-32 {
+  font-size: 32px;
+}
+.fz-36 {
+  font-size: 36px;
+}
+.fz-38 {
+  font-size: 38px;
+}
+.fz-40 {
+  font-size: 40px;
+}
+.fz-42 {
+  font-size: 42px;
+}
+.fz-48 {
+  font-size: 48px;
+}
+.fz-64 {
+  font-size: 64px;
+}
+
+@include pad {
+  .fz-md-20 {
+    font-size: 20px;
+  }
+  .fz-md-24 {
+    font-size: 24px;
+  }
+  .fz-md-28 {
+    font-size: 28px;
+  }
+  .fz-md-30 {
+    font-size: 30px;
+  }
+  .fz-md-32 {
+    font-size: 32px;
+  }
+  .fz-md-36 {
+    font-size: 36px;
+  }
+  .fz-md-38 {
+    font-size: 38px;
+  }
+  .fz-md-40 {
+    font-size: 40px;
+  }
+  .fz-md-42 {
+    font-size: 42px;
+  }
+  .fz-md-48 {
+    font-size: 48px;
+  }
+  .fz-md-64 {
+    font-size: 64px;
+  }
+}
+
+@include mobile {
+  .fz-sm-20 {
+    font-size: 20px;
+  }
+  .fz-sm-24 {
+    font-size: 24px;
+  }
+  .fz-sm-28 {
+    font-size: 28px;
+  }
+  .fz-sm-30 {
+    font-size: 30px;
+  }
+  .fz-sm-32 {
+    font-size: 32px;
+  }
+  .fz-sm-36 {
+    font-size: 36px;
+  }
+  .fz-sm-38 {
+    font-size: 38px;
+  }
+  .fz-sm-40 {
+    font-size: 40px;
+  }
+  .fz-sm-42 {
+    font-size: 42px;
+  }
+  .fz-sm-48 {
+    font-size: 48px;
+  }
+  .fz-sm-64 {
+    font-size: 64px;
+  }
+}

@@ -1,4 +1,4 @@
-// 全域
+// 全域設定
 *,
 *::after,
 *::before {
@@ -7,11 +7,11 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: inherit;
   font-family: "Noto Sans TC", "Roboto", sans-serif;
 }
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 img {
@@ -24,22 +24,6 @@ button {
   padding: 0;
   border: none;
   outline: none;
-  background: $bg-primary;
+  background: $c-primary;
   color: #fff;
-}
-//字型
-.italic {
-  font-style: italic;
-}
-.title {
-  font-size: 48px;
-  font-weight: bold;
-  color: $dark-red;
-}
-.bold {
-  font-weight: bold;
-}
-// color
-.bg-primary {
-  background: $bg-primary;
 }

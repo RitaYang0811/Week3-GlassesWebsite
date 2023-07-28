@@ -1,4 +1,4 @@
-// layout
+// container
 .container {
   max-width: 1320px;
   padding-left: 12px;
@@ -17,6 +17,7 @@
     padding-right: 14px;
   }
 }
+//flexbox
 .d-flex {
   display: flex;
 }
@@ -45,30 +46,60 @@
 .ta-c {
   text-align: center;
 }
+
 // 間距
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .py-80 {
   padding-top: 80px;
   padding-bottom: 80px;
-}
-@include mobile {
-  .py-sm-40 {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-.mx-12 {
-  margin-left: 12px;
-  margin-right: 12px;
 }
 
 .mb-8 {
   margin-bottom: 8px;
 }
-// gutter
-.px-12 {
-  padding-left: 12px;
-  padding-right: 12px;
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mx--12 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+@include pad {
+  .mb-md-40 {
+    margin-bottom: 40px;
+  }
+}
+@include mobile {
+  .mt-sm-64 {
+    margin-top: 64px;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-64 {
+    margin-bottom: 64px;
+  }
+  .py-sm-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 // col

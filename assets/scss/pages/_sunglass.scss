@@ -1,0 +1,22 @@
+//banner
+.sunglasses-banner-image-left,
+.sunglasses-banner-image-right {
+  flex: 1; /* 讓物件可收縮平分父容,=flex-shrink:1, =flex:1 1 0 */
+  height: 296px; /* 設置容器高度 */
+  background-size: cover; /* 覆蓋整個容器 */
+  @include mobile {
+    height: 136px;
+  }
+}
+.sunglasses-banner-image-left {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true);
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+  }
+}
+.sunglasses-banner-image-right {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true);
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+  }
+}

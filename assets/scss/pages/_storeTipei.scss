@@ -1,0 +1,15 @@
+.store-detail {
+  flex-direction: column;
+  @include pad {
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  @include mobile {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.store-map {
+  margin-bottom: 24px;
+}

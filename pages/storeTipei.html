@@ -8,9 +8,70 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是範本</h1>
-    <%- include('./layout/footer'); -%>
+    <div class="container py-80 py-sm-40">
+      <h3 class="store-locate fz-48 bold mb-33 mb-sm-31">門市據點</h3>
+      <!-- 下拉選單store-chosen -->
+      <div
+        class="store-chosen d-flex f-aic col-4 col-md-7 col-sm-12 mb-41 mb-sm-31"
+      >
+        <p class="fz-24 fz-sm-16 mr-16">選擇分店</p>
+        <!-- 最初呈現文字 button dropdrown-btn-->
+        <div class="dropdown flex-grow">
+          <div class="dropdown-btn d-flex f-aic f-jcsb">
+            <span class="dropdown-btnText">台北中山旗艦店</span>
+            <span class="material-icons-outlined"> arrow_drop_down </span>
+          </div>
 
+          <!-- 下拉選單選項 dropdown-menu-->
+          <ul class="dropdown-menu">
+            <li class="down-taipei-chunshan"><a href="#">台北中山旗艦店</a></li>
+            <li class="down-taichung-greengraden">
+              <a href="#">台北綠園店</a>
+            </li>
+            <li class="down-kaoshung-shei"><a href="#">台中清水旗艦店</a></li>
+            <li class="down-taichung-chunchen">
+              <a href="#">高雄中正形象店</a>
+            </li>
+            <li class="down-kaoshung-dream"><a href="#">高雄夢時代店</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 門市詳細資訊 -->
+      <div class="store-info d-flex fxw-w mx--12">
+        <!-- 照片＋資訊 -->
+        <div class="store-detail c-darkGray d-flex col-5 col-md-12 px-12">
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"
+            alt="taipei-store"
+            class="col-md-6 col-sm-12"
+          />
+
+          <div class="store-card-content col-md-6 col-sm-12">
+            <h4 class="store-name fz-24">台北中山旗艦店</h4>
+            <ul class="store-txt fz-20">
+              <li class="d-flex f-aifs">
+                <span class="material-icons-outlined mr-11"> call </span>
+                <p>電話：(02)000-1234</p>
+              </li>
+              <li class="d-flex f-aifs">
+                <span class="material-icons-outlined mr-11"> schedule </span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex f-aifs">
+                <span class="material-icons-outlined mr-11"> place </span>
+                <p>地址：台北市中山區南京東25巷2-1號</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 地圖 -->
+        <div class="store-map col-7 col-md-12 px-12">
+          <img src="../assets/images/map-1.png" alt="map-1" />
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

@@ -42,13 +42,19 @@
 .f-aife {
   align-items: flex-end;
 }
+.f-aifs {
+  align-items: flex-start;
+}
 
 .ta-c {
   text-align: center;
 }
 
 // 間距
-
+// padding
+.pt-16 {
+  padding-top: 16px;
+}
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -58,25 +64,55 @@
   padding-bottom: 80px;
 }
 
+// margin
+// mx(left+right)
+.mx--12 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+// my(top+bottom)
+// mt
+.mt-80 {
+  margin-top: 80px;
+}
+// mb
 .mb-8 {
   margin-bottom: 8px;
 }
 .mb-16 {
   margin-bottom: 16px;
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-32 {
   margin-bottom: 32px;
+}
+.mb-33 {
+  margin-bottom: 33px;
+}
+.mb-41 {
+  margin-bottom: 41px;
+}
+.mb-48 {
+  margin-bottom: 48px;
 }
 .mb-80 {
   margin-bottom: 80px;
 }
-.mt-80 {
-  margin-top: 80px;
+
+// mr
+.mr-11 {
+  margin-right: 11px;
 }
-.mx--12 {
-  margin-left: -12px;
-  margin-right: -12px;
+.mr-16 {
+  margin-right: 16px;
 }
+// ml
 
 @include pad {
   .mb-md-40 {
@@ -92,6 +128,9 @@
   }
   .mb-sm-24 {
     margin-bottom: 24px;
+  }
+  .mb-sm-31 {
+    margin-bottom: 31px;
   }
   .mb-sm-64 {
     margin-bottom: 64px;

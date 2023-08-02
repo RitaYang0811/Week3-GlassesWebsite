@@ -30,6 +30,9 @@
 .f-jcc {
   justify-content: center;
 }
+.f-jcfs {
+  justify-content: flex-start;
+}
 .fxw-w {
   flex-wrap: wrap;
 }
@@ -76,6 +79,9 @@
 }
 // my(top+bottom)
 // mt
+.mt-24 {
+  margin-top: 24px;
+}
 .mt-80 {
   margin-top: 80px;
 }
@@ -97,6 +103,9 @@
 }
 .mb-33 {
   margin-bottom: 33px;
+}
+.mb-40 {
+  margin-bottom: 40px;
 }
 .mb-41 {
   margin-bottom: 41px;
@@ -121,8 +130,18 @@
 // ml
 
 @include pad {
+  .mt-md-8 {
+    margin-top: 8px;
+  }
+
+  .mb-md-0 {
+    margin-bottom: 0;
+  }
   .mb-mb-8 {
     margin-bottom: 8px;
+  }
+  .mb-md-16 {
+    margin-bottom: 16px;
   }
   .mb-md-24 {
     margin-bottom: 24px;
@@ -132,8 +151,17 @@
   }
 }
 @include mobile {
+  .mt-sm-16 {
+    margin-top: 16px;
+  }
   .mt-sm-64 {
     margin-top: 64px;
+  }
+  .mb-sm-8 {
+    margin-bottom: 8px;
+  }
+  .mb-sm-16 {
+    margin-bottom: 16px;
   }
   .mb-sm-24 {
     margin-bottom: 24px;

@@ -5,6 +5,9 @@
 .bg-secondary {
   background: $c-secondary;
 }
+.bg-darkRed {
+  background: $dark-red;
+}
 // 文字顏色
 .c-darkRed {
   color: $dark-red;
@@ -23,4 +26,7 @@
 }
 .c-gray {
   color: #495057;
+}
+.c-light-gray {
+  color: $light-gray;
 }

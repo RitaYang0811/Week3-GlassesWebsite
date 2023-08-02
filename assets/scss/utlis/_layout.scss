@@ -104,6 +104,9 @@
 .mb-48 {
   margin-bottom: 48px;
 }
+.mb-60 {
+  margin-bottom: 60px;
+}
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -118,6 +121,12 @@
 // ml
 
 @include pad {
+  .mb-mb-8 {
+    margin-bottom: 8px;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
   .mb-md-40 {
     margin-bottom: 40px;
   }

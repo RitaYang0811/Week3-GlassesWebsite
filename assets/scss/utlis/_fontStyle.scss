@@ -17,6 +17,9 @@
 .bold {
   font-weight: bold;
 }
+.medium {
+  font-weight: 700;
+}
 // 字級
 .fz-19 {
   font-size: 19px;
@@ -36,6 +39,7 @@
 .fz-32 {
   font-size: 32px;
 }
+
 .fz-36 {
   font-size: 36px;
 }
@@ -56,6 +60,9 @@
 }
 
 @include pad {
+  .fz-md-16 {
+    font-size: 16px;
+  }
   .fz-md-20 {
     font-size: 20px;
   }

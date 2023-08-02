@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glasses Website</title>
-    <script type="module" crossorigin src="/Week3-GlassesWebsite/assets/main-409ea9a4.js"></script>
-    <link rel="stylesheet" href="/Week3-GlassesWebsite/assets/main-9f4f9cae.css">
+    <script type="module" crossorigin src="/Week3-GlassesWebsite/assets/all-5c2369eb.js"></script>
+    <link rel="stylesheet" href="/Week3-GlassesWebsite/assets/all-9f4f9cae.css">
   </head>
   <body>
     <nav class="bg-primary">
@@ -250,5 +250,62 @@
 </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     
+    <script>
+      console.log("Hello world!");
+
+      // 門市據點下拉選單
+      $(".dropdown-btn ").click(function (e) {
+        e.preventDefault();
+        console.log("aaa");
+        $(".dropdown-menu ").toggleClass("active");
+      });
+      // 下拉選單改變門市區域文字
+      // 點選li（“.down-taipei”） >.dropdown-menu判斷取消（“active”）收合選單>span（“.dropdown-btnText”）文字內容變成（“台北市”）
+      $(".down-taipei").click(function (e) {
+        console.log("bbb");
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("台北市");
+      });
+
+      $(".down-taichung").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("台中市");
+      });
+
+      $(".down-kaoshung").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("高雄市");
+      });
+
+      // 下拉選單改變分店名字
+      $(".down-taipei-chunshan").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("台北中山旗艦店");
+      });
+      $(".down-taichung-greengraden").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("台北綠園店");
+      });
+      $(".down-kaoshung-shei").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("台中清水旗艦店");
+      });
+      $(".down-taichung-chunchen").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("高雄中正形象店");
+      });
+      $(".down-kaoshung-dream").click(function (e) {
+        e.preventDefault();
+        $(".dropdown-menu").toggleClass("active");
+        $(".dropdown-btnText").text("高雄夢時代店<");
+      });
+    </script>
   </body>
 </html>

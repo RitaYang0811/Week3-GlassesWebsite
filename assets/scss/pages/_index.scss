@@ -165,9 +165,13 @@
 .reco-card {
   margin-left: -12px;
   margin-right: -12px;
-
+  @include pad {
+    li {
+      margin-bottom: 24px;
+    }
+  }
   @include mobile {
-    gap: 16px;
+    margin-bottom: 16px;
   }
 }
 .mb-md-24 {

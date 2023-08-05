@@ -1,10 +1,11 @@
 .nav-bar {
   justify-content: space-between;
   align-items: center; //水平置中
-  height: auto; //不要設定高度，讓背景隨內容自動調整
+  // height: auto; //不要設定高度，讓背景隨內容自動調整 //更新：為預設不需設定
   padding-top: 16px;
   padding-bottom: 16px;
-  @include mobile {
+
+  @include xlmobile {
     flex-direction: column; //RWD垂直排列
     align-items: stretch; //如果沒有更改，會保持垂直置中，加上strech讓物件左右延伸填滿
     padding-bottom: 0px;
@@ -20,22 +21,26 @@
     background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true)
       no-repeat;
     background-size: cover; //將圖片縮小成合適大小
-    @include mobile {
+    @include xlmobile {
       margin-bottom: 16px; //將logo往下與menu推出距離
     }
   }
 }
 .menu {
   background: $c-primary;
+  @include xlmobile {
+    margin-right: -36px;
+    margin-left: -36px;
+    flex-wrap: wrap;
+  }
   @include mobile {
     margin-right: -14px; //用margin負值消除container的padding，使之貼齊邊框
     margin-left: -14px; //用margin負值消除container的padding，使之貼齊邊框
-    flex-wrap: wrap;
   }
 }
 .menu-list {
   display: flex;
-  @include mobile {
+  @include xlmobile {
     border: 1px solid #fff;
     width: 50%;
   }
@@ -44,7 +49,7 @@
     color: #fff;
     font-size: 20px;
     padding: 10px 32px 10px 32px;
-    @include mobile {
+    @include xlmobile {
       // width: 100%; 如果使用100%延展，會讓下方裝飾線也延展
       // text-align: center;
       margin: 0 auto;
@@ -69,7 +74,7 @@
 .menu .right {
   //用高權重覆蓋樣式讓右邊a靠邊
   padding-right: 0px;
-  @include mobile {
+  @include xlmobile {
     padding-right: 32px;
   }
 }

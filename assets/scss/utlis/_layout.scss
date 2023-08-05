@@ -6,13 +6,19 @@
   margin: 0 auto;
   //991.98px以下
   @include pad {
-    max-width: 1063px;
+    max-width: 1063.98px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  //767.98px以下(讓header/footer較早變成手機版，以防文字擠壓破版)
+  @include xlmobile {
+    max-width: 839.98px;
     padding-left: 36px;
     padding-right: 36px;
   }
   //767.98px以下
   @include mobile {
-    max-width: 791px;
+    max-width: 603.98px;
     padding-left: 14px;
     padding-right: 14px;
   }
@@ -58,6 +64,10 @@
 .pt-16 {
   padding-top: 16px;
 }
+.px--2 {
+  padding-left: -2px;
+  padding-right: -2px;
+}
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -69,6 +79,10 @@
 
 // margin
 // mx(left+right)
+.mx--2 {
+  margin-left: -2px;
+  margin-right: -2px;
+}
 .mx--12 {
   margin-left: -12px;
   margin-right: -12px;
@@ -174,6 +188,9 @@
   }
   .mb-sm-64 {
     margin-bottom: 64px;
+  }
+  .pb-sm-24 {
+    padding-bottom: 24px;
   }
   .py-sm-40 {
     padding-top: 40px;

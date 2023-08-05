@@ -1,6 +1,6 @@
 // menu
 .blog-menu {
-  @include pad {
+  @include mobile {
     display: none;
   }
   span {
@@ -10,6 +10,18 @@
     cursor: pointer;
   }
 }
+.blogpage-menu {
+  span {
+    display: block;
+    color: #fff;
+    font-size: 29px;
+    cursor: pointer;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
 .blog-menu-list {
   color: #fff;
   gap: 48px;

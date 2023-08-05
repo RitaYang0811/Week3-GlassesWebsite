@@ -1,14 +1,10 @@
-// * {
-//     outline: 1px solid orange;
-//   }
 // bread
 .breadcrumb {
   display: flex;
+  li + li {
+    text-indent: 6px;
+  }
 }
-// .breadcrumb-item {
-//   text-indent: 1rem;
-// }
-// b-tags
 // b-main
 .b-main {
   gap: 24px;
@@ -29,13 +25,15 @@
     height: 24px;
     margin-right: 16px;
   }
-  padding: 16px;
-  border-bottom: 1px solid #707070;
+  // padding: 16px;
+
   @include mobile {
     display: none;
   }
 }
 .b-pages {
+  border-top: 1px solid #707070;
+  padding-top: 16px;
   @include mobile {
     display: none;
   }

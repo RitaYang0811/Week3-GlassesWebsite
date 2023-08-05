@@ -1,10 +1,7 @@
-// * {
-//   outline: 1px solid orange;
-// }
 footer {
   color: #fff;
   padding-bottom: 32px;
-  @include mobile {
+  @include xlmobile {
     padding-bottom: 24px;
   }
 }
@@ -12,7 +9,7 @@ footer {
 .footer-top {
   padding-top: 48px;
   padding-bottom: 32px;
-  @include mobile {
+  @include xlmobile {
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
@@ -29,19 +26,19 @@ footer {
   font-size: 16px;
   gap: 24px;
 
-  @include mobile {
+  @include xlmobile {
     display: none;
   }
 }
 .footer-list-social {
   gap: 32px;
-  @include mobile {
+  @include xlmobile {
     gap: 8px;
   }
   img {
     width: 48px;
 
-    @include mobile {
+    @include xlmobile {
       width: 24px;
     }
   }
@@ -52,14 +49,14 @@ footer {
   gap: 8px;
   flex-direction: column;
   align-items: start;
-  @include mobile {
+  @include xlmobile {
     font-size: 16px;
   }
 
   span {
     font-size: 36px;
     width: 60px;
-    @include mobile {
+    @include xlmobile {
       font-size: 16px;
       width: 26px;
     }
@@ -72,7 +69,7 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
   border-top: 1px solid #fff;
-  @include mobile {
+  @include xlmobile {
     flex-direction: column;
     align-items: start;
     gap: 8px;
@@ -87,7 +84,7 @@ footer {
 }
 .policy {
   gap: 48px;
-  @include mobile {
+  @include xlmobile {
     flex-direction: column;
     align-items: start;
     gap: 8px;

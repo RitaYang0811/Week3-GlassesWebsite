@@ -1,16 +1,14 @@
 // banner
+// 縮寫筆記：background: color image attachment repeat poition / size
 .bg-banner-image {
   background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true)
-    no-repeat;
-  height: 787px;
-  background-position: center;
-  background-size: cover;
+    no-repeat center center / cover;
+  // height: 787px; .banner有設定高度故不用再設定
 
-  @include mobile {
+  // pad時背景圖片就換小張圖
+  @include pad {
     background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true)
-      no-repeat;
-    height: 396px;
-    background-size: cover; //
+      no-repeat center center/ cover;
   }
 }
 .banner {
@@ -62,6 +60,10 @@
   }
 }
 .intro-card {
+  img {
+    width: 84px; //icon圖片依照設計稿設定尺寸
+    margin-bottom: 24px;
+  }
   h4 {
     font-size: 24px;
     font-weight: bold;
@@ -69,7 +71,7 @@
     margin-bottom: 8px;
   }
 }
-// series
+// series系列鏡框
 
 .series-title {
   text-align: center;
@@ -93,7 +95,7 @@
     }
   }
 }
-// cobranding
+// cobranding 聯名鏡框
 .bg-brand-image {
   background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true)
     center;
@@ -102,13 +104,13 @@
   @include pad {
     background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true)
       center;
-    height: 960px;
+    // height: 960px; 不用設定高度，內部推出高度，否則版型會重疊
     background-size: cover;
   }
   @include mobile {
     background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true)
       center;
-    height: 820px;
+    // height: 820px;
   }
 }
 .brand-title {
@@ -218,7 +220,7 @@
     width: 100%;
     height: 33px;
     border: 1px solid #000;
-    caret-color: $c-primary;
+    caret-color: $c-primary; //光標顏色
   }
   ::placeholder {
     padding: 12px;

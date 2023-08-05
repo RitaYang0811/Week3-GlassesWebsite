@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glasses Website</title>
-    <script type="module" crossorigin src="/Week3-GlassesWebsite/assets/all-5c2369eb.js"></script>
-    <link rel="stylesheet" href="/Week3-GlassesWebsite/assets/all-9f4f9cae.css">
+    <script type="module" crossorigin src="/Week3-GlassesWebsite/assets/all-e167f5a4.js"></script>
+    <link rel="stylesheet" href="/Week3-GlassesWebsite/assets/all-00e4c9f6.css">
   </head>
   <body>
     <nav class="bg-primary">
@@ -33,9 +33,9 @@
         <div class="container banner d-flex">
           <h3>Promise-Desert 2020 早春系列</h3>
           <h2>看得清，才能看得遠</h2>
-          <button class="header-btn">
+          <div class="header-btn button">
             <a href="./optical.html">立即購買</a>
-          </button>
+          </div>
         </div>
       </div>
       <!-- intro -->
@@ -211,30 +211,35 @@
             <p>
               我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
             </p>
-            <div class="name-group">
+            <div>
               <label for="name"
-                >姓名<br />
+                >姓名
+                <!-- <br /> 為區塊元素，會自動分行不需加br，文字需包在label內才能順利指向-->
                 <input type="text" id="name" placeholder="陳小明" required />
               </label>
             </div>
-            <div class="tel-group">
-              聯絡電話<br />
+            <div>
               <label for="tel"
-                ><input type="tel" id="tel" placeholder="0912-345-678" required
+                >聯絡電話<input
+                  type="tel"
+                  id="tel"
+                  placeholder="0912-345-678"
+                  required
               /></label>
             </div>
-            <div class="mail-group">
-              電子郵件<br /><label for="email"
-                ><input
+            <div>
+              <label for="email"
+                >電子郵件<input
                   type="email"
                   id="email"
                   placeholder="example@gmail.com"
                   required
               /></label>
             </div>
-            <div class="text-group">
+            <div>
               <label for="opinion"
-                >意見反應<br />
+                >意見反應
+
                 <textarea
                   type="textarea"
                   id="opinion"
@@ -243,7 +248,7 @@
                 ></textarea>
               </label>
             </div>
-            <div class="checkbox-group d-flex f-aic">
+            <div class="d-flex f-aic">
               <input
                 type="checkbox"
                 name="privacy-check"
@@ -254,7 +259,7 @@
                 >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
               >
             </div>
-            <button class="contactus-btn">
+            <button type="submit" class="contactus-btn">
               <a href="#">確認送出</a>
             </button>
           </form>

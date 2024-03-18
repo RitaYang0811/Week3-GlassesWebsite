@@ -1,15 +1,31 @@
-![首圖](https://storage.googleapis.com/vue-course-api.appspot.com/greensheep/1710787243233.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=O8Ldam1f%2FfVkRDEYLznan5%2FsK0NUEg0vfsPEsCWcsiIVR1pua0c07YC1kvwo61y7ycYjkgKlv2zPnIJJrGlXJFJ0TeOHdEHI7Qdin0xr4WV2cVohWprw2MW7yOkBQHf7Fe8vQ1qcBeQQw2XXV3ecYQqOKMdjAuKk8on3Brum722ZsB%2B3L4nOT2Iei2SZyPdOrbXN4pLq25Qj%2FaGrN65c0fnnjqUjs4hgk1juTyp6JQq56ayj3OuJ2igXf8fyDO8sAYFUlu7sScE0YGd6QgXB%2BJh1CGQk1652nG7GaOjlrzgYjo%2BufNuWR1z0w4R15VTVbgF6n3s3vFnkhe7l%2BsOTcQ%3D%3D)
-![手機版](https://storage.googleapis.com/vue-course-api.appspot.com/greensheep/1710787514495.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=PkNCwju7WB6QuSnNeZdsTXfB4zBkHktefieDpAAACC02BhOSevNpUIlkB75BQrDX7EnARSeThGPTDlFHRGVGCFUj2ZIfbv8cayy%2F9wfkurRzUXbMnEmYJWlZVW4N6nL%2B2xcBBDP7Stl21t25CiSaIUR9m3TqJZLZS1tbSyAslaetDb4Nxxa46jUQdPgRZYQhSGP4pokvOQZvdjv1H37JXVh59jQSccC34C72EUr6qLz%2F252KyYKXWXme8%2Bmj2g16UT9a9T9A3gNEX2P7ChHgdKiuCyi3Uq7TT96HCHcNhNGNlk0GX7qGkiTYpUS3gLUjaGaHZ3kjZQuZib1Tg%2Fqcqg%3D%3D)
+![首圖](https://storage.googleapis.com/vue-course-api.appspot.com/greensheep/1710789754218.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=A7s2ODwTBFfUyWOW8bNi2o46vKfOL6cKuPL2N4YCPmlUwHVMZ7yqO40Po%2B7AmtQg0fiEDuD0%2FumGvyBFFOo%2FuNfzSJkCKXt9n1IVbBUcQvhkk02pkop2DGIXqxTgZNqqbGFbXsaRrGuiSV95rR4GGUf%2FochxcQwuGl0ZqqQ4IfziuJI%2BU%2BnCPXBTXIp1M65c0hTObjYs9apMjCTOSu9sopVwIt4aARemQMD4rsO03QS3BCDWFjQK8mIBK62TsAJMW40RkWnwlT1hEuEHX4%2F58a8Mpw7y%2FmqS9W9VotPSFdeTM4ffKobfstaw7SfgFD0wuwW9pUCH9%2BjLHV32RH%2Bqtg%3D%3D)
+![產品](https://storage.googleapis.com/vue-course-api.appspot.com/greensheep/1710789793498.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=IRpElycbZHFYFHDCt6cWIh2b128Bf8s4rTs6VVN2WVJLoCpRRESTdY%2BPzZpAeIhn4XvCIFH7BmBEbCwMlzlZkH6ynyCFfqzUJM7gvsbFN4GNW1O0Z2o%2FNuNXDvFi4CZK%2BcQDDp%2FaXujbQ1nCF5MWPEkVEvvJcNsujcb5HGPF0ytN5QR2EpONOYII9RTUaP6lvFyGzcewqTGYV0r0BE7Z0NghnuhVSUs5VGtH%2BKIpLPmHKbQht5RJcoabn6gcBR6dT0NzHisHxlLXgrFiptXEXsWv5zsZ8Lj%2BYdiYoaQRx5aas2RWfLfQvLi1Z%2FXuHcEpWOWTUGgURIBixEQlknz8CA%3D%3D)
+![其他](https://storage.googleapis.com/vue-course-api.appspot.com/greensheep/1710789822786.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=j30HP6c3yfZDXuTc7CkNdunqcWshPmoF9xfgpVF%2FjkaZiIzcHjC7We%2BxvB7b4o3Rq2aQ4iqrz6%2F5EHsa%2FTGGzoo43UIHidAzc7isx6%2FQtxw6Cg0td3poQgYF9tfMv1ZTDUMb9DlUVxPBNcfbZmhPdF%2Fv4Bj0z%2Bn0Z330nARLTKE%2BW7SDfWuvgyrApeZM0gcZxiI70Tt4xz1jAOlu3WFhXJBhMeQEA7kA8yTeFvufmD%2FYW1iqwPGqUSDlXW0bLS%2BAVMPJ4a4ygz3YlnApC8l7iPuzwocnCoKEf5smPTm6fEwSsrnoWaCrIQk%2FsuWflu%2Be521uhd%2Bl5N68mP0K%2BPYmzA%3D%3D)
+
 ## 眼鏡官網
 ### 此為六角學院課程作品
 ##### https://ritayang0811.github.io/Week3-GlassesWebsite/
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+## 使用技術
+- RWD
+- Bootstrap 5
+- SASS
+- EJS 樣板
+- Vite 佈署
 
 ## 頁面
-- 首頁
-- 系列鏡框
-- 專欄文章
-- 常見問題
-- 門市據點
+- index
+- optical
+- sunglasses
+- FAQ
+- store
+- storeTaipei
+- blog
+- blogValentine
   
 
 

@@ -5,39 +5,41 @@
     text-indent: 6px;
   }
 }
-// b-main
-.b-main {
-  gap: 24px;
-}
-// 內文
-.b-txt {
-  p {
-    color: $light-gray;
-  }
-}
-.b-share {
-  p {
-    font-weight: bold;
-    margin-right: 16px;
-  }
-  img {
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
-  }
-  // padding: 16px;
 
-  @include mobile {
-    display: none;
+.b {
+  &-main {
+    gap: 24px;
+  }
+  // 內文
+  &-txt {
+    p {
+      color: $light-gray;
+    }
+  }
+  &-share {
+    p {
+      font-weight: bold;
+      margin-right: 16px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+  &-pages {
+    border-top: 1px solid #707070;
+    padding-top: 16px;
+    @include mobile {
+      display: none;
+    }
   }
 }
-.b-pages {
-  border-top: 1px solid #707070;
-  padding-top: 16px;
-  @include mobile {
-    display: none;
-  }
-}
+
 // Tags
 .tags {
   h6 {
@@ -46,15 +48,15 @@
   @include mobile {
     display: none;
   }
-}
-.tags-icon {
-  font-size: 38px;
-}
-.tags-list {
-  li {
-    margin-bottom: 4px;
-    a {
-      margin-right: 24px;
+  &-icon {
+    font-size: 38px;
+  }
+  &-list {
+    li {
+      margin-bottom: 4px;
+      a {
+        margin-right: 24px;
+      }
     }
   }
 }

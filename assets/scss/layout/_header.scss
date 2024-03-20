@@ -37,40 +37,41 @@
     margin-right: -14px; //用margin負值消除container的padding，使之貼齊邊框
     margin-left: -14px; //用margin負值消除container的padding，使之貼齊邊框
   }
-}
-.menu-list {
-  display: flex;
-  @include xlmobile {
-    border: 1px solid #fff;
-    width: 50%;
-  }
-  a {
-    // display: block;為什麼可以不用設為區塊元素
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 32px 10px 32px;
+  &-list {
+    display: flex;
     @include xlmobile {
-      // width: 100%; 如果使用100%延展，會讓下方裝飾線也延展
-      // text-align: center;
-      margin: 0 auto;
-      //使用margin將區塊元素推至中間
+      border: 1px solid #fff;
+      width: 50%;
     }
-    // 裝飾線
-    &::after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 100%;
-      background-color: #fff;
-      transform: scalex(0); //Ｘ軸為基準，物件尺寸0
-      transform-origin: left; //起始點由左側開始
-      transition: transform 0.4s ease;
-    }
-    &:hover::after {
-      transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
+    a {
+      // display: block;為什麼可以不用設為區塊元素
+      color: #fff;
+      font-size: 20px;
+      padding: 10px 32px 10px 32px;
+      @include xlmobile {
+        // width: 100%; 如果使用100%延展，會讓下方裝飾線也延展
+        // text-align: center;
+        margin: 0 auto;
+        //使用margin將區塊元素推至中間
+      }
+      // 裝飾線
+      &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        transform: scalex(0); //Ｘ軸為基準，物件尺寸0
+        transform-origin: left; //起始點由左側開始
+        transition: transform 0.4s ease;
+      }
+      &:hover::after {
+        transform: scalex(1); //Ｘ軸為基準，物件尺寸100%
+      }
     }
   }
 }
+
 .menu .right {
   //用高權重覆蓋樣式讓右邊a靠邊
   padding-right: 0px;

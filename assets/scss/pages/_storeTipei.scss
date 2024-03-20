@@ -1,19 +1,21 @@
-.store-detail {
-  flex-direction: column;
-  @include pad {
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 24px;
-  }
-  @include mobile {
+.store {
+  &-detail {
     flex-direction: column;
-    gap: 0px;
+    @include pad {
+      flex-direction: row;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      flex-direction: column;
+      gap: 0px;
+    }
   }
-}
-.store-map {
-  // img {
-  //   width: 100%;
-  //   height: 100%;
-  //   object-fit: cover;
-  // }
+  &-map {
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
+  }
 }

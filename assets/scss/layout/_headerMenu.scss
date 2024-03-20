@@ -1,16 +1,6 @@
 // 分類header
 .header-menu {
   padding: 0px;
-  // margin-left: -12px;
-  // margin-right: -12px;
-  // @include pad {
-  //   margin-left: -36px;
-  //   margin-right: -36px;
-  // }
-  // @include mobile {
-  //   margin-left: -14px;
-  //   margin-right: -14px;
-  // }
   li {
     width: 33.333%;
     position: relative; //相對定位
@@ -31,7 +21,7 @@
 
   .active::after {
     content: "";
-    position: absolute; //用absulute絕對定位，使之浮起不佔高度
+    position: absolute; //用absolute絕對定位，使之浮起不佔高度
     bottom: 0px;
     display: block;
     width: 100%;
